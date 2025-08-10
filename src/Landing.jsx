@@ -116,10 +116,7 @@ export default function Landing() {
               </Button>
             </div>
 
-            <div className="flex items-center justify-center gap-2 text-sm text-gray-400 pt-4">
-              <Star className="w-4 h-4 text-yellow-400 fill-current" />
-              <span>Join 10,000+ users in beta</span>
-            </div>
+
           </div>
         </div>
 
@@ -169,7 +166,7 @@ export default function Landing() {
             ].map((feature, index) => (
               <div key={index} className="opacity-0 translate-y-16 animate-fade-in-up" style={{ animationDelay: `${index * 0.2}s` }}>
                 <Card className="bg-white/5 border-white/10 backdrop-blur-sm h-full hover:bg-white/10 transition-all duration-500 group">
-                  <CardContent className="p-8">
+                  <CardContent className="p-8 pt-12">
                     <div className="w-16 h-16 bg-[var(--brand-green)] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                       {React.cloneElement(feature.icon, { className: 'w-8 h-8 text-black' })}
                     </div>
