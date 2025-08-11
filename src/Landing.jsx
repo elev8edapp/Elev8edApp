@@ -108,7 +108,7 @@ export default function Landing({ onNavigateToAndroidBeta }) {
               >
                 <Button className="bg-[var(--brand-green)] hover:bg-[var(--brand-green-dark)] text-black border-none rounded-full px-12 py-4 text-lg font-medium transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
                 <Apple className="w-6 h-6 mr-3" />
-                Download for iOS
+                Download Beta for iOS
               </Button>
               </a>
               <Button
@@ -216,7 +216,7 @@ export default function Landing({ onNavigateToAndroidBeta }) {
               >
                 <Button size="lg" className="bg-[var(--brand-green)] hover:bg-[var(--brand-green-dark)] text-black border-none rounded-full px-12 py-4 text-lg font-medium transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
                   <Apple className="w-6 h-6 mr-3" />
-                  Download for iOS
+                  Download Beta for iOS
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
@@ -228,19 +228,19 @@ export default function Landing({ onNavigateToAndroidBeta }) {
                 className="border-2 border-white/20 bg-white/5 hover:bg-white/10 text-white rounded-full px-12 py-4 text-lg font-medium transition-all duration-300 transform hover:scale-105 backdrop-blur-sm w-full sm:w-auto"
               >
                 <Play className="w-6 h-6 mr-3" />
-                Download for Android
+                Android Beta Access
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </div>
 
-            <div className="mt-12 flex items-center justify-center gap-8 text-sm text-gray-400">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-green-400" />
-                <span>Free Beta Access</span>
+            <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-gray-400">
+              <div className="flex items-center gap-1.5">
+                <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0" />
+                <span className="whitespace-nowrap">Free Beta Access</span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-green-400" />
-                <span>Early Access Features</span>
+              <div className="flex items-center gap-1.5">
+                <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0" />
+                <span className="whitespace-nowrap">Early Access Features</span>
               </div>
             </div>
           </div>
