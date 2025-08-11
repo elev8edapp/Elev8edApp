@@ -71,7 +71,7 @@ export default function AndroidBeta({ onNavigateHome }) {
                 <p className="text-gray-300 mb-6">
                   Our closed beta is managed through a private Google Group. You must be a member to download the app. Click the button below and request to join.
                 </p>
-                <a href="YOUR_GOOGLE_GROUP_LINK_HERE" target="_blank" rel="noopener noreferrer">
+                <a href="https://groups.google.com/g/testingelev8edapp" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-[var(--brand-green)] hover:bg-[var(--brand-green-dark)] text-black font-medium gap-2 transition-all duration-300 transform hover:scale-105">
                     <Users className="w-5 h-5" />
                     Request to Join Group
@@ -101,7 +101,7 @@ export default function AndroidBeta({ onNavigateHome }) {
                 <p className="text-gray-300 mb-6">
                   Once your request to join the group has been approved, you'll be able to download the app from the Play Store.
                 </p>
-                <a href="YOUR_GOOGLE_PLAY_BETA_LINK_HERE" target="_blank" rel="noopener noreferrer">
+                <a href="https://play.google.com/store/apps/details?id=com.mycompany.elev8" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-[var(--brand-green)] hover:bg-[var(--brand-green-dark)] text-black font-medium gap-2 transition-all duration-300 transform hover:scale-105">
                     <Play className="w-5 h-5" />
                     Download from Google Play
