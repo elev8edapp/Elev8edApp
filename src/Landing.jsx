@@ -17,9 +17,8 @@ import {
   Heart
 } from "lucide-react";
 
-export default function Landing() {
+export default function Landing({ onNavigateToAndroidBeta }) {
   const [isScrolled, setIsScrolled] = useState(false);
-
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -33,20 +32,6 @@ export default function Landing() {
     
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const fadeInUp = {
-    initial: { opacity: 0, y: 60 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.8, ease: [0.6, -0.05, 0.01, 0.99] }
-  };
-
-  const stagger = {
-    animate: {
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
 
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
@@ -85,9 +70,6 @@ export default function Landing() {
                 Elev8ed
               </span>
             </div>
-            <Button className="bg-[var(--brand-green)] hover:bg-[var(--brand-green-dark)] text-black border-none rounded-full px-8 py-3 font-medium transition-all duration-300 transform hover:scale-105">
-              Get Beta Access
-            </Button>
           </div>
         </div>
       </nav>
@@ -129,21 +111,15 @@ export default function Landing() {
                 Download for iOS
               </Button>
               </a>
-              <a  
-                href="https://play.google.com/store/apps/details?id=com.mycompany.elev8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto"
-              >
-                <Button
+              <Button
+                onClick={onNavigateToAndroidBeta}
                 variant="outline"
                 className="border-2 border-white/20 bg-white/5 hover:bg-white/10 text-white rounded-full px-12 py-4 text-lg font-medium transition-all duration-300 transform hover:scale-105 backdrop-blur-sm w-full sm:w-auto"
               >
                 <Play className="w-6 h-6 mr-3" />
-                Download for Android
+                Android Beta Access
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              </a>
             </div>
 
           </div>
@@ -245,28 +221,22 @@ export default function Landing() {
                 </Button>
               </a>
             
-              <a  
-                href="https://play.google.com/store/apps/details?id=com.mycompany.elev8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto"
+              <Button 
+                onClick={onNavigateToAndroidBeta}
+                size="lg" 
+                variant="outline" 
+                className="border-2 border-white/20 bg-white/5 hover:bg-white/10 text-white rounded-full px-12 py-4 text-lg font-medium transition-all duration-300 transform hover:scale-105 backdrop-blur-sm w-full sm:w-auto"
               >
-                <Button size="lg" variant="outline" className="border-2 border-white/20 bg-white/5 hover:bg-white/10 text-white rounded-full px-12 py-4 text-lg font-medium transition-all duration-300 transform hover:scale-105 backdrop-blur-sm w-full sm:w-auto">
                 <Play className="w-6 h-6 mr-3" />
                 Download for Android
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              </a>
             </div>
 
             <div className="mt-12 flex items-center justify-center gap-8 text-sm text-gray-400">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-green-400" />
                 <span>Free Beta Access</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-green-400" />
-                <span>No Credit Card Required</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-green-400" />
