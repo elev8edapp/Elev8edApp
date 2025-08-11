@@ -109,6 +109,7 @@ export default function Landing({ onNavigateToAndroidBeta }) {
                 <Button className="bg-[var(--brand-green)] hover:bg-[var(--brand-green-dark)] text-black border-none rounded-full px-12 py-4 text-lg font-medium transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
                 <Apple className="w-6 h-6 mr-3" />
                 Download Beta for iOS
+                <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
               </a>
               <Button

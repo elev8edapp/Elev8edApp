@@ -69,12 +69,12 @@ export default function AndroidBeta({ onNavigateHome }) {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-300 mb-6">
-                  Our closed beta is managed through a private Google Group. You must be a member to download the app. Click the button below and request to join.
+                  To download the beta app, you must be a member of the testing group. Click the button below to join, and ensure you use the same email linked to your Google Play account.
                 </p>
                 <a href="https://groups.google.com/g/testingelev8edapp" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-[var(--brand-green)] hover:bg-[var(--brand-green-dark)] text-black font-medium gap-2 transition-all duration-300 transform hover:scale-105">
                     <Users className="w-5 h-5" />
-                    Request to Join Group
+                    Join Beta Testing Google Group
                   </Button>
                 </a>
               </CardContent>
@@ -99,7 +99,7 @@ export default function AndroidBeta({ onNavigateHome }) {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-300 mb-6">
-                  Once your request to join the group has been approved, you'll be able to download the app from the Play Store.
+                  Once you have joined the group, you'll be able to download the app from the Play Store.
                 </p>
                 <a href="https://play.google.com/store/apps/details?id=com.mycompany.elev8" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-[var(--brand-green)] hover:bg-[var(--brand-green-dark)] text-black font-medium gap-2 transition-all duration-300 transform hover:scale-105">
@@ -116,7 +116,7 @@ export default function AndroidBeta({ onNavigateHome }) {
           isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
         }`} style={{ transitionDelay: '0.6s' }}>
           <p className="text-center mt-12 text-gray-400">
-            Please note: It may take some time for your group membership to be approved. Thank you for your patience!
+            Note: If you encounter an error when opening the Google Play page, ensure you joined the Google Group with the same email linked to your Google Play account.
           </p>
         </div>
       </div>
